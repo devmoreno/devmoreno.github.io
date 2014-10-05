@@ -1,0 +1,662 @@
+@import url(http://fonts.googleapis.com/css?family=Crimson+Text:400,400italic,600,600italic,700);
+/*!
+ * Briwfi Onepage vCard Template
+ * © sandthemes
+*/
+/* ========TABLE OF CONTENTS========== 
+00. BODY, LINKS, SECTION TITLES, GENERAL
+01. HEADERBAR, NAVIGATION
+02. EVERY SECTION TITLES
+03. SECTION ABOUT
+	ABOUT LEFT SIDE
+	ABOUT RIGHT SIDE
+	ABOUT RIGHT CONTENT TOP
+	ABOUT RIGHT CONTENT BOTTOM
+04. SECTION RESUME
+05. SECTION SERVICES
+06. SECTION PORTOFOLIO (WORKS)
+	WORKS GRID
+	WORKS FILTERS
+07. SECTION CONTACT
+	GENERAL FORM STYLES
+	MESSAGE FOR SUCCES
+08. MEDIA QUERIES FOR RESPONSIVE DESIGN
+
+/* ========00. BODY, LINKS, SECTION TITLES, GENERAL========== */
+html, body {
+     width: 100%;
+     height: 100%;
+}
+body {
+  	font-family: 'Montserrat', sans-serif;
+  	font-size: 14px;
+  	color: #222222;
+  	-webkit-font-smoothing: antialiased;
+  	background: #ffffff;
+  	position: relative;
+}
+a {
+  	color: #222222;
+  	-webkit-transition: 0.2s;
+  	-moz-transition: 0.2s;
+  	transition: 0.2s;
+}
+a:hover {
+  	color: #3dc9b3;
+  	text-decoration:none;
+}
+
+
+/*PAGE LOADER*/
+
+#loader {
+    background: #ffffff;
+    bottom: 0;
+    height: 100%;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 9999;
+}
+#loaderInner {
+    background:#ffffff url(../images/load.gif) center center no-repeat;
+    height: 60px;
+    left: 50%;
+    position: absolute;
+    top: 50%;
+    width: 60px;
+}
+
+
+/* ========01. HEADERBAR, NAVIGATION========== */
+#headerBar {
+	z-index: 999;
+  	width: 100%;
+  	height: auto;
+  	min-height: 80px;
+  	-webkit-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  	-moz-transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  	transition: 0.2s cubic-bezier(.58,.83,.57,.84); 
+  	position: fixed;
+  	top: 0px;
+  	background: #fff;
+	-webkit-box-shadow: 0px 7px 16px 0px rgba(50, 50, 50, 0.1);
+		-moz-box-shadow:    0px 7px 16px 0px rgba(50, 50, 50, 0.1);
+	box-shadow:         0px 7px 16px 0px rgba(50, 50, 50, 0.1);
+}
+#headerBar .container {
+	padding: 0;
+}
+.headerLeft {
+	text-align: left;
+	line-height: 80px;
+	padding: 0;
+}
+.headerRight {
+	text-align: left;
+	padding: 0;
+}
+.navbar-collapse {padding-left: 0px;}
+.navbar {margin-bottom: 0;-webkit-padding-start: 0px;}
+.navbar li{display: inline-block;margin: 0 10px;}
+.navbar li a{
+  	font-weight: 400;
+  	font-size: 12px;
+  	line-height: 80px;
+  	letter-spacing: 2px;
+  	text-decoration: none;
+  	z-index: 999;
+  	padding: 4px 0;
+  	-webkit-transition: 0.3s;
+  	-moz-transition: 0.3s;
+  	transition: 0.3s;
+  	text-transform: uppercase;
+}
+.navbar li.active a {
+	border-bottom: 1px solid #3dc9b3;
+	color: #3dc9b3;
+}
+.navbar-toggle {
+	font-size: 30px;
+	cursor: pointer;
+}
+
+/* ========02. EVERY SECTION TITLES========== */
+.sectionTitle {
+	text-align: center;
+	padding-top: 75px;
+	padding-bottom: 25px;
+}
+.sectionTitle h1 {
+  	letter-spacing: 1px;
+  	font-size: 24px;
+  	font-weight: 600;
+  	text-transform: uppercase;
+}
+.sectionTitle h4 {
+  	letter-spacing: 1px;
+  	font-size: 12px;
+  	font-weight: 400;
+  	text-transform: uppercase;
+  	padding-bottom: 5px;
+}
+.sectionTitle p {
+  	font-size: 18px;
+  	font-weight: 300;
+  	line-height: 25px;
+  	color: #787878;
+  	font-family: 'Crimson Text', serif;
+  	font-style: italic;
+}
+.sectionTitle .separatorlineblack {
+  	margin-bottom: 30px;
+}
+.separatorlineblack {
+  	width: 100px;
+  	height: 2px;
+  	margin: 0 auto;
+  	background: #000;
+}
+/* ========03. SECTION ABOUT========== */
+
+#sectionAbout {
+	text-align: center;
+ 	background-image: url(../images/02.jpg);
+ 	background-size: cover;
+ 	background-repeat: no-repeat;
+	height: auto;
+	width: 100%;
+	-webkit-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
+	-moz-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
+	box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.2);
+}
+.aboutContainer {
+	padding: 0;
+}
+
+
+/* ====ABOUT LEFT SIDE==== */
+
+.aboutLeft {
+	height: 100%;
+ 	text-align: left;
+ 	padding-left:0;
+ 	padding-top: 30%;
+}
+.intro-content {
+	text-align: center;
+}
+.intro-heading h1 {
+  	color: #ffffff;
+  	font-size:65px;
+  	font-weight: 700;
+  	letter-spacing: 2px;
+  	text-transform: uppercase;
+  	padding-bottom: 10px;
+  	line-height: 75px;
+}
+.lineTag {
+	color: #fff;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	margin-right: 10px;
+}
+.lineTag:after {
+	content: '';
+	display: inline-block;
+	width: 4px;
+	height: 4px;
+	overflow: hidden;
+	margin-left: 10px;
+	border-radius: 100%;
+	background: #ffffff;
+	margin-bottom: 2px;
+}
+
+
+/* ====ABOUT RIGHT SIDE==== */
+
+.aboutRight {
+	background-color: #ededed;
+	padding: 0;
+	min-height: 750px;
+	-webkit-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.1);
+	-moz-box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.1);
+	box-shadow: inset 0px -9px 33px -5px rgba(0,0,0,0.1);
+}
+.aboutRight h2 {
+	font-size: 13px;
+	text-transform: uppercase;
+}
+/* ====ABOUT RIGHT CONTENT TOP==== */
+.aboutRightContentTop {
+	background: #ffffff;
+	padding-top: 20%;
+	padding-right:10%;
+	padding-left: 10%;
+	padding-bottom: 25px;
+	text-align: left;
+}
+.aboutTitle h1{
+	font-size: 40px;
+	text-transform: uppercase;
+	margin-bottom: 5px;
+}
+.aboutTitle h2 {
+	margin-top: 0;
+	color: #777!important;
+	text-transform: lowercase!important;
+}
+.aboutIntro {
+	margin-top: 30px;
+}
+.aboutIntro p{
+	font-size: 17px;
+  	font-weight: 300;
+  	color: #787878;
+  	font-family: 'Crimson Text', serif;
+  	font-style: italic;
+}
+
+/* ====ABOUT RIGHT CONTENT BOTTOM==== */
+.aboutRightContentBottom {
+	padding-right:10%;
+	padding-left: 10%;
+	text-align: left;
+	padding-top: 25px;
+	padding-bottom: 30px;
+}
+.aboutRightContentBottom h4 {
+	margin: 5px 0;
+	padding: 0;
+	text-transform: uppercase;
+	font-size: 12px;
+	letter-spacing: 1px;
+	line-height: 20px;
+}
+h4.lastChildRCB {
+	margin-bottom: 40px;
+}
+a.scroll-down {
+	border: 2px solid #222222;
+	color: #222222;
+	background: transparent;
+	padding: 10px 20px;
+	text-transform: uppercase;
+	font-size: 13px;
+}
+
+
+
+/* ========04. SECTION RESUME========== */
+
+#sectionResume {
+	background: #ffffff;
+	min-height: 600px;
+}
+#sectionResume h2 {
+	font-size: 17px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+	font-weight: 600;
+	margin-bottom: 30px;
+}
+.resumeLeft span, .resumeRight span {
+	font-size: 30px;
+}
+.resumeLeft {
+	text-align: right;
+	border-right: 1px solid #eee;
+}
+.resumeRight {
+	text-align: left;
+}
+.resumeList {
+	-webkit-padding-start: 0px;
+	-moz-padding-start:0px;
+	padding: 0 10px;
+}
+.resumeList li{
+	list-style: none;
+	margin-top: 40px;
+	margin-bottom: 60px;
+}
+.resumeList li h4 {
+	font-size: 14px;
+	text-transform: uppercase;
+	letter-spacing: 1px;
+}
+.resumeName {
+	color: #666;
+	font-size: 12px;
+	text-transform: lowercase;
+}
+.resumeList p {
+	font-size: 16px;
+  	font-weight: 300;
+  	color: #787878;
+  	font-family: 'Crimson Text', serif;
+  	font-style: italic;
+}
+.resumePeriod {
+	background: #222222;
+	color: #fff;
+	padding: 2px 4px;
+	font-size: 12px;
+	font-style: italic;
+}
+
+.resumeStats {
+  	margin-top: 25px;
+  	text-align: center;
+}
+.resumeStats span {
+	font-size: 30px;
+}
+.resumeStats .col-md-2 {
+  	padding: 50px;
+  	border-left: 1px solid #eee;
+  	border-top: 1px solid #eee;
+}
+
+.statsIconPerc {
+  	font-size: 50px;
+  	font-weight: 500;
+  	letter-spacing: 1px;
+}
+.statsName {
+  	text-transform: uppercase;
+  	font-size: 14px;
+  	font-weight: 600;
+  	letter-spacing: 1px;
+}
+
+
+/* ========05. SECTION SERVICES========== */
+
+#sectionServices {
+  	background: #eee;
+  	padding-bottom: 50px;
+}
+
+.servicesCol4 {
+  	padding-top:30px;
+  	padding-bottom:30px;
+  	overflow: hidden;
+  	min-height: 215px;
+}
+.servicesCol4 h3 {
+  	font-size: 15px;
+  	margin-top: 0px;
+  	padding-top: 0;
+  	text-transform: uppercase;
+  	font-weight: 600;
+  	text-align: left;
+}
+.servicesCol4 p{
+  	font-size: 16px;
+  	font-weight: 200;
+  	font-family: 'Crimson Text', serif;
+  	text-align: left;
+  	font-style: italic;
+  	color: #666;
+  	padding-top: 10px;
+}
+.servicesCol4 span {
+  	font-size: 40px;
+  	text-align: center;
+  	color: #3dc9b3;
+}
+.servicesLeft {
+  	float: left;
+}
+.servicesRight {
+  	padding-left: 23%;
+  	padding-right: 2%;
+}
+
+
+/* ========06. SECTION PORTOFOLIO (WORKS)========== */
+#sectionWorks {
+	padding-bottom: 100px;
+}
+
+/* ====WORKS GRID==== */
+#worksGrid {
+	display: table;
+}
+.worksItem {
+  	display: none;
+  	padding: 0px;
+  	overflow: hidden;
+  	height: auto;
+  	text-align: center;
+}
+.worksItem img {
+	width: 100%;
+	height: auto;
+}
+.worksItem .itemCaption {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	padding-top: 100px;
+	opacity: 0;
+  	-webkit-transition: all .35s ease-out;
+  	transition: all .35s ease-out;
+  	color: #fff!important;
+}
+.worksItem:hover .itemCaption {
+	padding-top: 70px;
+	opacity: 1;
+	background-color: rgba(61,201,179,0.6);
+}
+.itemCaption h2 {
+	font-size: 18px;
+	letter-spacing: 1px;
+	text-transform: uppercase;
+	margin-bottom: 10px;
+	padding-bottom: 0;
+}
+.itemCaption p {
+	font-size: 16px;
+  	font-weight: 200;
+  	font-family: 'Crimson Text', serif;
+  	font-style: italic;
+}
+.itemCaption::before {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+	bottom: 30px;
+	left: 30px;
+	border: 1px solid #fff;
+	content: '';
+	-webkit-transform: scale(1.1);
+	transform: scale(1.1);
+	opacity: 0;
+	-webkit-transition: opacity 0.35s,
+	-webkit-transform 0.35s;
+	transition: opacity 0.35s,
+	transform 0.35s;
+}
+.worksItem:hover .itemCaption::before {
+	opacity: 1;
+	-webkit-transform: scale(1);
+	transform: scale(1);
+}
+
+
+
+/* ====WORKS FILTERS==== */
+.worksFilters {
+  	-webkit-padding-start:0px;
+}
+.worksFilters {
+  	margin: 0 auto;
+  	text-align: center;
+  	padding-bottom: 50px;
+}
+.worksFilters li {
+  	display: inline-block;
+  	cursor: pointer;
+  	padding: 6px 0px;
+  	margin:0 15px;
+  	font-weight: 400;
+  	font-size: 12px;
+  	text-transform: uppercase;
+  	-webkit-transition: all .2s ease-out;
+  	transition: all .2s ease-out;
+  	letter-spacing: 1px;
+}
+.current-filter {
+  	border-bottom: 1px solid #3dc9b3;
+  	color: #3dc9b3;
+}
+
+
+
+/* ========07. SECTION CONTACT========== */
+
+
+#sectionContact {
+	background: #eee;
+}
+.contactForm {
+	max-width: 600px;
+	margin: 50px auto;
+}
+.contactForm div {
+	margin-top: 15px;
+}
+.contactFooter {
+	background-color: #111;
+	padding: 40px 0 30px 0;
+	color: #fff;
+}
+.footerLeft {
+	font-size: 13px;
+	font-weight: 400;
+	color: #777;
+	padding-top: 15px;
+}
+.footerRight {
+	text-align: right;
+	font-size: 40px;
+}
+.footerRight a{
+	color: #777;
+}
+.footerRight a:hover {
+	color: #fff;
+}
+
+/* ====GENERAL FORM STYLES==== */
+
+input, textarea, select {
+    color: #222;
+	background: transparent;
+	vertical-align: top;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	margin: 0;
+	padding: 15px;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	border: 1px solid #ccc;
+    font-size: 13px;
+    font-weight: 600;
+}
+input:focus, textarea:focus, select:focus {
+	outline: none;
+	position: relative;
+	z-index: 5;
+	transition: all 0.25s ease-in-out;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	border: 1px solid #222;
+}
+input.error, textarea.error, select.error {
+	border: 1px solid #3dc9b3;
+}
+input.submit {
+	width: auto;
+	cursor: pointer;
+	position: relative;
+    background: transparent;
+    border: 2px solid #222;
+    color: #222;
+    padding: 16px;
+    margin: 20px 0;
+    -webkit-transition: all .2s ease-in-out;
+    -moz-transition: all .2s ease-in-out;
+    -o-transition: all .2s ease-in-out;
+    transition: all .2s ease-in-out;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 15px;
+  	font-weight: 600;
+}
+input.submit:hover {
+  	color: #ffffff;
+    background: #222;
+}
+
+/* ====MESSAGE FOR SUCCES==== */
+
+#message { 
+	margin: 1em 0; 
+	padding: 0; 
+	display: block; 
+	background: transparent none; 
+}
+#message h1 {
+  	letter-spacing: 1px;
+ 	font-size: 20px;
+  	font-weight: 400;
+	text-transform: uppercase;
+}
+
+#message p {
+  	font-size: 16px;
+  	font-weight: 200;
+  	font-family: 'Crimson Text', serif;
+  	text-align: left;
+  	font-style: italic;
+}
+
+/* ========08. MEDIA QUERIES FOR RESPONSIVE DESIGN========== */
+@media screen and (max-width: 768px) {
+
+.intro-heading h1 {
+  	font-size:45px;
+  	line-height: 45px;
+}
+.navbar li {
+	display: block;
+}
+.navbar li a {
+	line-height: 40px;
+}
+
+}
+
+@media screen and (max-width: 480px) {
+
+.resumeStats .col-md-2 {
+  	padding: 20px;
+}
+
+
+}
+
+
