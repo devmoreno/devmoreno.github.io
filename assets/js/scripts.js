@@ -30,4 +30,4 @@ jQuery(window).load(function() {
 
 //------- ACTIVE LINKS SCROLLSPY ---//
 
-$('body').scrollspy({ offset: 200, target: '.navigation' });
+//$('body').scrollspy({ offset: 200, target: '.navigation' });
