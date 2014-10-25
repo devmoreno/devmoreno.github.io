@@ -190,7 +190,7 @@ a:hover {
 }
 .intro-heading h1 {
   	color: #ffffff;
-  	font-size:65px;
+  	font-size:45px;
   	font-weight: 700;
   	letter-spacing: 2px;
   	text-transform: uppercase;
@@ -332,7 +332,7 @@ a.scroll-down {
 .resumeName {
 	color: #666;
 	font-size: 12px;
-	text-transform: lowercase;
+	text-transform: uppercase;
 }
 .resumeList p {
 	font-size: 16px;
